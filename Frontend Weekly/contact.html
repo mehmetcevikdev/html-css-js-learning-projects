@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Weekly - Contact</title>
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!--! header start -->
+    <header class="header">
+        <section class="header-flex">
+            <a href="home.html" class="header-logo">Frontend Weekly</a>
+            <form action="" method="post" class="search-form">
+                <input type="text" name="search_box" placeholder="Videoları Ara" required maxlength="100">
+                <button type="submit" class="fas fa-search" name="search_box"></button>
+            </form>
+            <div class="header-icons">
+                <div id="menu-btn" class="icon fas fa-bars"></div>
+                <div id="search-btn" class="icon fas fa-search"></div>
+                <div id="user-btn" class="icon fas fa-user"></div>
+                <div id="toggle-btn" class="icon fas fa-sun"></div>
+            </div>
+            <div class="profile">
+                <img class="profile-img" src="images/pic-1.jpg" alt="">
+                <h3 class="profile-name">Mehmet Çevik</h3>
+                <p class="profile-role">Frontend Developer</p>
+                <a href="profile.html" class="btn">View Profile</a>
+                <div class="flex-btn">
+                    <a href="login.html" class="btn option-btn">Login</a>
+                    <a href="register.html" class="btn option-btn">Register</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!--! header end -->
+
+    <!--! sidebar start -->
+
+    <div class="sidebar">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="profile">
+            <img class="profile-img" src="images/pic-1.jpg" alt="">
+            <h3 class="profile-name">Mehmet Çevik</h3>
+            <p class="profile-role">Frontend Developer</p>
+            <a href="profile.html" class="btn">View Profile</a>
+        </div>
+        <nav class="navbar">
+            <a href="home.html" class="navbar-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="about.html" class="navbar-item">
+                <i class="fas fa-question"></i>
+                <span>About</span>
+            </a>
+            <a href="courses.html" class="navbar-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Courses</span>
+            </a>
+            <a href="teachers.html" class="navbar-item">
+                <i class="fas fa-code"></i>
+                <span>Teachers</span>
+            </a>
+            <a href="contact.html" class="navbar-item">
+                <i class="fas fa-headset"></i>
+                <span>Contact Us</span>
+            </a>
+        </nav>
+    </div>
+
+    <!--! sidebar end -->
+
+    <!--! contact start -->
+
+    <section class="contact">
+        <div class="row">
+            <div class="image">
+                <img src="images/contact-img.svg" alt="">
+            </div>
+            <form action="" method="post">
+                <h3>get in touch</h3>
+                <input type="text" placeholder="enter your name" required maxlength="50" class="box">
+                <input type="email" placeholder="enter your email" required maxlength="50" class="box">
+                <input type="number" placeholder="enter your number" required maxlength="50" class="box">
+                <textarea name="msg" class="box" placeholder="enter your message" required maxlength="1000" cols="30"
+                    rows="10"></textarea>
+                <input type="submit" value="send message" class="inline-btn" name="submit">
+            </form>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <h3>phone number</h3>
+                <a href="tel:1234567890">123-456-7890</a>
+                <a href="tel:1112223333">111-222-3333</a>
+            </div>
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <h3>email address</h3>
+                <a href="mailto:mehmet@outlook.com">mehmet@outlook.com</a>
+                <a href="mailto:cevik@outlook.com">cevik@outlook.com</a>
+            </div>
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>office address</h3>
+                <a href="#">pamukkale universitesi, teknokent, no:7, kat:1, denizli, turkey </a>
+            </div>
+        </div>
+    </section>
+
+    <!--! contact end -->
+
+    <!--! footer start -->
+
+    <div class="footer">
+        &copy; copyright @ 2024 by <a href="https://www.youtube.com/@frontendweekly">Frontend Weekly</a> | all rights
+        reserved!
+    </div>
+
+    <!--! footer end -->
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

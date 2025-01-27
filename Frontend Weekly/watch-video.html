@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Weekly - courses</title>
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!--! header start -->
+    <header class="header">
+        <section class="header-flex">
+            <a href="home.html" class="header-logo">Frontend Weekly</a>
+            <form action="" method="post" class="search-form">
+                <input type="text" name="search_box" placeholder="Videoları Ara" required maxlength="100">
+                <button type="submit" class="fas fa-search" name="search_box"></button>
+            </form>
+            <div class="header-icons">
+                <div id="menu-btn" class="icon fas fa-bars"></div>
+                <div id="search-btn" class="icon fas fa-search"></div>
+                <div id="user-btn" class="icon fas fa-user"></div>
+                <div id="toggle-btn" class="icon fas fa-sun"></div>
+            </div>
+            <div class="profile">
+                <img class="profile-img" src="images/pic-1.jpg" alt="">
+                <h3 class="profile-name">Mehmet Çevik</h3>
+                <p class="profile-role">Frontend Developer</p>
+                <a href="profile.html" class="btn">View Profile</a>
+                <div class="flex-btn">
+                    <a href="login.html" class="btn option-btn">Login</a>
+                    <a href="register.html" class="btn option-btn">Register</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!--! header end -->
+
+    <!--! sidebar start -->
+
+    <div class="sidebar">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="profile">
+            <img class="profile-img" src="images/pic-1.jpg" alt="">
+            <h3 class="profile-name">Mehmet Çevik</h3>
+            <p class="profile-role">Frontend Developer</p>
+            <a href="profile.html" class="btn">View Profile</a>
+        </div>
+        <nav class="navbar">
+            <a href="home.html" class="navbar-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="about.html" class="navbar-item">
+                <i class="fas fa-question"></i>
+                <span>About</span>
+            </a>
+            <a href="courses.html" class="navbar-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Courses</span>
+            </a>
+            <a href="teachers.html" class="navbar-item">
+                <i class="fas fa-code"></i>
+                <span>Teachers</span>
+            </a>
+            <a href="contact.html" class="navbar-item">
+                <i class="fas fa-headset"></i>
+                <span>Contact Us</span>
+            </a>
+        </nav>
+    </div>
+
+    <!--! sidebar end -->
+
+    <!--! watch video start -->
+
+    <section class="watch-video">
+        <div class="video-container">
+            <div class="video">
+                <video src="images/vid-1.mp4" controls poster="images/post-1-1.png" id="video"></video>
+            </div>
+            <h3 class="title">complete HTML tutorial (part 01)</h3>
+            <div class="info">
+                <p class="date">
+                    <i class="fas fa-calendar"></i>
+                    <span>17.09.2024</span>
+                </p>
+                <p class="likes">
+                    <i class="fas fa-heart"></i>
+                    <span>44 likes</span>
+                </p>
+
+            </div>
+            <div class="tutor">
+                <img src="images/pic-1.jpg" alt="">
+                <div>
+                    <h3>mehmet cevik</h3>
+                    <span>frontend developer</span>
+                </div>
+            </div>
+            <form action="" method="post" class="flex">
+                <a href="course-playlist.html" class="inline-btn">View Playlist</a>
+                <button>
+                    <i class="far fa-heart"></i>
+                    <span>like</span>
+                </button>
+            </form>
+            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque labore ratione, hic
+                exercitationem mollitia obcaecati culpa dolor placeat provident porro. Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Aliquid iure autem non fugit sint. A, sequi rerum architecto dolor fugiat
+                illo, iure velit nihil laboriosam cupiditate voluptatum facere cumque nemo!</p>
+        </div>
+    </section>
+
+    <section class="comments">
+        <h1 class="heading">Comments</h1>
+        <form action="" class="add-comment">
+            <h3>add comments</h3>
+            <textarea name="comment_box" placeholder="enter your comment" required maxlength="1000" cols="30" rows="10"
+                id=""></textarea>
+            <input type="button" value="add comment" class="inline-btn" name="add_comment">
+        </form>
+
+        <h1 class="heading">user comments</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="user">
+                    <img src="images/pic-1.jpg" alt="">
+                    <div>
+                        <h3>mehmet cevik</h3>
+                        <span>17-09-2024</span>
+                    </div>
+                </div>
+                <div class="comment-box">this is a comment from mehmet cevik
+                </div>
+                <form action="" class="flex-btn">
+                    <input type="submit" value="edit comment" name="edit_comment" class="inline-option-btn">
+                    <input type="submit" value="delete comment" name="delete_comment" class="inline-delete-btn">
+                </form>
+            </div>
+            <div class="box">
+                <div class="user">
+                    <img src="images/pic-2.jpg" alt="">
+                    <div>
+                        <h3>xxx</h3>
+                        <span>17-09-2024</span>
+                    </div>
+                </div>
+                <div class="comment-box">awesome tutorial!
+                    keep going!
+                </div>
+            </div>
+            <div class="box">
+                <div class="user">
+                    <img src="images/pic-2.jpg" alt="">
+                    <div>
+                        <h3>xxx</h3>
+                        <span>17-09-2024</span>
+                    </div>
+                </div>
+                <div class="comment-box">awesome tutorial!
+                    keep going!
+                </div>
+            </div>
+            <div class="box">
+                <div class="user">
+                    <img src="images/pic-2.jpg" alt="">
+                    <div>
+                        <h3>xxx</h3>
+                        <span>17-09-2024</span>
+                    </div>
+                </div>
+                <div class="comment-box">awesome tutorial!
+                    keep going!
+                </div>
+            </div>
+            <div class="box">
+                <div class="user">
+                    <img src="images/pic-2.jpg" alt="">
+                    <div>
+                        <h3>xxx</h3>
+                        <span>17-09-2024</span>
+                    </div>
+                </div>
+                <div class="comment-box">awesome tutorial!
+                    keep going!
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--! watch video end -->
+
+
+
+
+
+
+    <!--! footer start -->
+
+    <div class="footer">
+        &copy; copyright @ 2024 by <a href="https://www.youtube.com/@frontendweekly">Frontend Weekly</a> | all rights
+        reserved!
+    </div>
+
+    <!--! footer end -->
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

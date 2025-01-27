@@ -1,0 +1,36 @@
+.form-container{
+    min-height: calc(100vh - 20rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form{
+        background-color: var(--white);
+        padding: 2rem;
+        border-radius: .5rem;
+        width: 50rem;
+
+        h3{
+            font-size: 2.5rem;
+            color: var(--black);
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+        p{
+            font-size: 1.7rem;
+            color: var(--light-color);
+            padding-top: 1rem;
+        }
+
+        .box{
+            background-color: var(--light-bg);
+            margin: 1rem 0;
+            padding: 1.4rem;
+            border-radius: .5rem;
+            width: 100%;
+            font-size: 1.8rem;         
+            color: var(--black);
+        }
+    }
+}

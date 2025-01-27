@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Weekly - Home</title>
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!--! header start -->
+    <header class="header">
+        <section class="header-flex">
+            <a href="home.html" class="header-logo">Frontend Weekly</a>
+            <form action="" method="post" class="search-form">
+                <input type="text" name="search_box" placeholder="Videoları Ara" required maxlength="100">
+                <button type="submit" class="fas fa-search" name="search_box"></button>
+            </form>
+            <div class="header-icons">
+                <div id="menu-btn" class="icon fas fa-bars"></div>
+                <div id="search-btn" class="icon fas fa-search"></div>
+                <div id="user-btn" class="icon fas fa-user"></div>
+                <div id="toggle-btn" class="icon fas fa-sun"></div>
+            </div>
+            <div class="profile">
+                <img class="profile-img" src="images/pic-1.jpg" alt="">
+                <h3 class="profile-name">Mehmet Çevik</h3>
+                <p class="profile-role">Frontend Developer</p>
+                <a href="profile.html" class="btn">View Profile</a>
+                <div class="flex-btn">
+                    <a href="login.html" class="btn option-btn">Login</a>
+                    <a href="register.html" class="btn option-btn">Register</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!--! header end -->
+
+    <!--! sidebar start -->
+
+    <div class="sidebar">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="profile">
+            <img class="profile-img" src="images/pic-1.jpg" alt="">
+            <h3 class="profile-name">Mehmet Çevik</h3>
+            <p class="profile-role">Frontend Developer</p>
+            <a href="profile.html" class="btn">View Profile</a>
+        </div>
+        <nav class="navbar">
+            <a href="home.html" class="navbar-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="about.html" class="navbar-item">
+                <i class="fas fa-question"></i>
+                <span>About</span>
+            </a>
+            <a href="courses.html" class="navbar-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Courses</span>
+            </a>
+            <a href="teachers.html" class="navbar-item">
+                <i class="fas fa-code"></i>
+                <span>Teachers</span>
+            </a>
+            <a href="contact.html" class="navbar-item">
+                <i class="fas fa-headset"></i>
+                <span>Contact Us</span>
+            </a>
+        </nav>
+    </div>
+
+    <!--! sidebar end -->
+
+    <!--! profile start -->
+
+    <section class="user-profile">
+        <h1 class="heading">Your Profile</h1>
+        <div class="info">
+            <div class="user">
+                <img src="images/pic-1.jpg" alt="">
+                <h3>Mehmet Cevik</h3>
+                <p>Developer</p>
+                <a href="update.html" class="inline-btn">update profile</a>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <div class="flex">
+                        <i class="fas fa-bookmark"></i>
+                        <div>
+                            <span>4</span>
+                            <p>saved playlist</p>
+                        </div>
+                    </div>
+                    <a href="#" class="inline-btn">view playlists</a>
+                </div>
+                <div class="box">
+                    <div class="flex">
+                        <i class="fas fa-heart"></i>
+                        <div>
+                            <span>33</span>
+                            <p>courses liked</p>
+                        </div>
+                    </div>
+                    <a href="#" class="inline-btn">view liked</a>
+                </div>
+                <div class="box">
+                    <div class="flex">
+                        <i class="fas fa-comment"></i>
+                        <div>
+                            <span>12</span>
+                            <p>courses comments</p>
+                        </div>
+                    </div>
+                    <a href="#" class="inline-btn">view comments</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--! profile end -->
+
+    <!--! footer start -->
+
+    <div class="footer">
+        &copy; copyright @ 2024 by <a href="https://www.youtube.com/@frontendweekly">Frontend Weekly</a> | all rights
+        reserved!
+    </div>
+
+    <!--! footer end -->
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
