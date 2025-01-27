@@ -1,0 +1,91 @@
+.header {
+    height: 60px;
+    background-color: #141618;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.header .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo {
+    margin-right: 40px;
+}
+
+.menu ul li a {
+    color: #fff;
+    opacity: .6;
+    display: flex;
+}
+
+.menu ul li a:hover {
+    opacity: 1;
+}
+
+.menu ul li a i {
+    margin-right: 10px;
+}
+
+.header .search {
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-left: auto;
+}
+
+.header .search input {
+    background-color: #21252d;
+    height: 34px;
+    width: 250px;
+    padding: 0 10px;
+    color: #fff;
+}
+
+.header .search input::placeholder {
+    opacity: .6;
+    color: #fff;
+}
+
+.header .search button {
+    background-color: #21252d;
+    height: 34px;
+    width: 32px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+}
+
+.header .search button:hover {
+    background-color: #316aff;
+}
+
+.header .login-buttons ul {
+    display: flex;
+}
+
+.header .login-buttons ul li {
+    margin-left: 15px;
+}
+
+.header .login-buttons ul li a {
+    height: 34px;
+    display: block;
+    line-height: 34px;
+    color: #fff;
+    opacity: .8;
+}
+
+.header .login-buttons ul li a:hover {
+    opacity: 1;
+}
+
+.header .login-buttons ul li.join-now-btn a {
+    background-color: #36855b;
+    padding: 0 15px;
+    border-radius: 4px;
+    opacity: 1;
+}

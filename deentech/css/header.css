@@ -1,0 +1,81 @@
+header {
+    height: 174px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F3F3F3;
+    position: sticky;
+    /* top: 0;
+    z-index: 1000; */
+}
+
+header .header-left {
+    width: 20%;
+    height: 100%;
+    background-color: #a6a6a6;
+}
+
+header .header-left .list {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-right: 17px;
+}
+
+header .header-left .burger {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+header .header-left .list span:nth-of-type(1) {
+    height: 3px;
+    width: 60px;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+header .header-left .list span:nth-of-type(2) {
+    height: 3px;
+    width: 60px;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+header .header-left .list span:nth-of-type(3) {
+    height: 3px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+header .header-center {
+    margin: 0 auto;
+    padding-right: 20%;
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+}
+
+header .header-center .header-content {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+header .header-center .header-content h1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #96969c;
+    line-height: 1;
+}
+
+header .header-center .header-content p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #838383;
+    line-height: 1;
+}

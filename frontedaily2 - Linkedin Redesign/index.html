@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linkendin Redesign</title>
+  <link rel="stylesheet" href="style.css" />
+  <!--! boostrap CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="img/logo.svg" alt="" />
+      </a>
+      <div class="search">
+        <i class="bi bi-search"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+      <nav class="menu">
+        <ul>
+          <li class="active">
+            <a href="#">
+              <i class="bi bi-house-door"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-people"></i>
+              <span>Users</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-briefcase"></i>
+              <span>Jobs</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-chat-left"></i>
+              <span>Messages</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-bell"></i>
+              <span>Notifications</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-grid"></i>
+              <span>More</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-menu">
+        <a href="#">
+          <span class="detail">
+            <span class="name">Mehmet Cevik</span>
+            <span class="status online">Online</span>
+          </span>
+          <img src="img/user.png" alt="" />
+          <i class="bi bi-chevron-down"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="sidebar">
+        <div class="widget widget-stats">
+          <div class="stat-user">
+            <div class="cover"></div>
+            <div class="avatar">
+              <img src="img/user-stat.png" alt="" />
+            </div>
+            <div class="name">Mehmet Cevik</div>
+            <div class="job-title">Frontend Developer</div>
+          </div>
+          <ul>
+            <li>
+              <span class="key">Who viewed your profile</span>
+              <span class="value">90</span>
+            </li>
+            <li>
+              <span class="key">Views of your post</span>
+              <span class="value">627</span>
+            </li>
+          </ul>
+        </div>
+        <div class="widget widget-newest">
+          <h6>NEWEST</h6>
+          <ul>
+            <li>
+              <a href="#"><i class="bi bi-hash"></i>money</a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-hash"></i>economy</a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-hash"></i>markets</a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-hash"></i>futurism</a>
+            </li>
+          </ul>
+          <h6>
+            GROUP
+            <div class="dropdown">
+              <a href="#"> Active <i class="bi bi-chevron-down"></i> </a>
+            </div>
+          </h6>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="bi bi-people"></i>Android Developer Group
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-people"></i>User Interface Group
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-people"></i>Frontend Weekly Group
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-people"></i>Design Thinking Group
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="widget widget-btn">
+          Add Event
+          <i class="bi bi-plus"></i>
+        </a>
+        <a href="#" class="widget widget-btn more"> Find More </a>
+      </div>
+
+      <div class="content">
+
+        <div class="create-post">
+          <textarea name="" placeholder="Create Post" id="" cols="30" rows="10"></textarea>
+          <ul class="actions">
+            <li>
+              <label>
+                <input type="file" accept="image/*">
+                <i class="bi bi-camera"></i>Photo
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="file">
+                <i class="bi bi-camera-video"></i>Video
+              </label>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-calendar4"></i>Event
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-pencil-square"></i>Write Articles
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="filter-box">
+          <h6>Filter post by :</h6>
+          <label class="select-box">
+            <select name="" id="">
+              <option value="">Populer</option>
+              <option value="">Populer</option>
+              <option value="">Populer</option>
+            </select>
+            <i class="bi bi-chevron-down"></i>
+          </label>
+        </div>
+
+        <div class="post">
+          <div class="post-header">
+            <a href="#" class="post-author">
+              <img src="img/user.png" alt="">
+              <div class="detail">
+                <div class="name">Brooklyn Simmons</div>
+                <div class="job-title">UI/UX Desginer at Freelance</div>
+                <div class="date">7 hours ago</div>
+              </div>
+            </a>
+            <a href="#" class="more">
+              <i class="bi bi-three-dots"></i>
+            </a>
+          </div>
+          <div class="post-content">
+            <p>
+              He said, Design is not just what it looks and feels like. Design is how it work
+            </p>
+            <p>
+              <a href="#">#stevejobs</a> <a href="#">#design</a> <a href="#">#apple</a>
+            </p>
+            <p>
+              <img src="img/Steve-Jobs.png" alt="">
+            </p>
+          </div>
+
+          <div class="post-alt-detail">
+            <div class="likes">
+              <i class="bi bi-heart"></i>
+              <i class="bi bi-hand-thumbs-up"></i>
+              172
+            </div>
+            <div class="comments">
+              10 Comments
+            </div>
+          </div>
+
+          <div class="post-actions">
+            <a href="#">
+              <i class="bi bi-hand-thumbs-up"></i> Like
+            </a>
+            <a href="#">
+              <i class="bi bi-chat-left"></i> Comment
+            </a>
+            <a href="#">
+              <i class="bi bi-share"></i> Share
+            </a>
+            <a href="#">
+              <i class="bi bi-send"></i> Send
+            </a>
+          </div>
+          <div class="post-comment-form">
+            <img src="img/user.png" alt="">
+            <div class="textarea">
+              <textarea name="" placeholder="Write comment" id="" cols="30" rows="10"></textarea>
+              <label>
+                <input type="file" accept="image/*">
+                <i class="bi bi-camera"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-header">
+            <a href="#" class="post-author">
+              <img src="img/user.png" alt="">
+              <div class="detail">
+                <div class="name">Brooklyn Simmons</div>
+                <div class="job-title">UI/UX Desginer at Freelance</div>
+                <div class="date">7 hours ago</div>
+              </div>
+            </a>
+            <a href="#" class="more">
+              <i class="bi bi-three-dots"></i>
+            </a>
+          </div>
+          <div class="post-content">
+            <p>
+              He said, Design is not just what it looks and feels like. Design is how it work
+            </p>
+            <p>
+              <a href="#">#stevejobs</a> <a href="#">#design</a> <a href="#">#apple</a>
+            </p>
+            <p>
+              <img src="img/Steve-Jobs.png" alt="">
+            </p>
+          </div>
+
+          <div class="post-alt-detail">
+            <div class="likes">
+              <i class="bi bi-heart"></i>
+              <i class="bi bi-hand-thumbs-up"></i>
+              172
+            </div>
+            <div class="comments">
+              10 Comments
+            </div>
+          </div>
+
+          <div class="post-actions">
+            <a href="#">
+              <i class="bi bi-hand-thumbs-up"></i> Like
+            </a>
+            <a href="#">
+              <i class="bi bi-chat-left"></i> Comment
+            </a>
+            <a href="#">
+              <i class="bi bi-share"></i> Share
+            </a>
+            <a href="#">
+              <i class="bi bi-send"></i> Send
+            </a>
+          </div>
+          <div class="post-comment-form">
+            <img src="img/user.png" alt="">
+            <div class="textarea">
+              <textarea name="" placeholder="Write comment" id="" cols="30" rows="10"></textarea>
+              <label>
+                <input type="file" accept="image/*">
+                <i class="bi bi-camera"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-header">
+            <a href="#" class="post-author">
+              <img src="img/user.png" alt="">
+              <div class="detail">
+                <div class="name">Brooklyn Simmons</div>
+                <div class="job-title">UI/UX Desginer at Freelance</div>
+                <div class="date">7 hours ago</div>
+              </div>
+            </a>
+            <a href="#" class="more">
+              <i class="bi bi-three-dots"></i>
+            </a>
+          </div>
+          <div class="post-content">
+            <p>
+              He said, Design is not just what it looks and feels like. Design is how it work
+            </p>
+            <p>
+              <a href="#">#stevejobs</a> <a href="#">#design</a> <a href="#">#apple</a>
+            </p>
+            <p>
+              <img src="img/Steve-Jobs.png" alt="">
+            </p>
+          </div>
+
+          <div class="post-alt-detail">
+            <div class="likes">
+              <i class="bi bi-heart"></i>
+              <i class="bi bi-hand-thumbs-up"></i>
+              172
+            </div>
+            <div class="comments">
+              10 Comments
+            </div>
+          </div>
+
+          <div class="post-actions">
+            <a href="#">
+              <i class="bi bi-hand-thumbs-up"></i> Like
+            </a>
+            <a href="#">
+              <i class="bi bi-chat-left"></i> Comment
+            </a>
+            <a href="#">
+              <i class="bi bi-share"></i> Share
+            </a>
+            <a href="#">
+              <i class="bi bi-send"></i> Send
+            </a>
+          </div>
+          <div class="post-comment-form">
+            <img src="img/user.png" alt="">
+            <div class="textarea">
+              <textarea name="" placeholder="Write comment" id="" cols="30" rows="10"></textarea>
+              <label>
+                <input type="file" accept="image/*">
+                <i class="bi bi-camera"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-header">
+            <a href="#" class="post-author">
+              <img src="img/user.png" alt="">
+              <div class="detail">
+                <div class="name">Brooklyn Simmons</div>
+                <div class="job-title">UI/UX Desginer at Freelance</div>
+                <div class="date">7 hours ago</div>
+              </div>
+            </a>
+            <a href="#" class="more">
+              <i class="bi bi-three-dots"></i>
+            </a>
+          </div>
+          <div class="post-content">
+            <p>
+              He said, Design is not just what it looks and feels like. Design is how it work
+            </p>
+            <p>
+              <a href="#">#stevejobs</a> <a href="#">#design</a> <a href="#">#apple</a>
+            </p>
+            <p>
+              <img src="img/Steve-Jobs.png" alt="">
+            </p>
+          </div>
+
+          <div class="post-alt-detail">
+            <div class="likes">
+              <i class="bi bi-heart"></i>
+              <i class="bi bi-hand-thumbs-up"></i>
+              172
+            </div>
+            <div class="comments">
+              10 Comments
+            </div>
+          </div>
+
+          <div class="post-actions">
+            <a href="#">
+              <i class="bi bi-hand-thumbs-up"></i> Like
+            </a>
+            <a href="#">
+              <i class="bi bi-chat-left"></i> Comment
+            </a>
+            <a href="#">
+              <i class="bi bi-share"></i> Share
+            </a>
+            <a href="#">
+              <i class="bi bi-send"></i> Send
+            </a>
+          </div>
+          <div class="post-comment-form">
+            <img src="img/user.png" alt="">
+            <div class="textarea">
+              <textarea name="" placeholder="Write comment" id="" cols="30" rows="10"></textarea>
+              <label>
+                <input type="file" accept="image/*">
+                <i class="bi bi-camera"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-header">
+            <a href="#" class="post-author">
+              <img src="img/user.png" alt="">
+              <div class="detail">
+                <div class="name">Brooklyn Simmons</div>
+                <div class="job-title">UI/UX Desginer at Freelance</div>
+                <div class="date">7 hours ago</div>
+              </div>
+            </a>
+            <a href="#" class="more">
+              <i class="bi bi-three-dots"></i>
+            </a>
+          </div>
+          <div class="post-content">
+            <p>
+              He said, Design is not just what it looks and feels like. Design is how it work
+            </p>
+            <p>
+              <a href="#">#stevejobs</a> <a href="#">#design</a> <a href="#">#apple</a>
+            </p>
+            <p>
+              <img src="img/Steve-Jobs.png" alt="">
+            </p>
+          </div>
+
+          <div class="post-alt-detail">
+            <div class="likes">
+              <i class="bi bi-heart"></i>
+              <i class="bi bi-hand-thumbs-up"></i>
+              172
+            </div>
+            <div class="comments">
+              10 Comments
+            </div>
+          </div>
+
+          <div class="post-actions">
+            <a href="#">
+              <i class="bi bi-hand-thumbs-up"></i> Like
+            </a>
+            <a href="#">
+              <i class="bi bi-chat-left"></i> Comment
+            </a>
+            <a href="#">
+              <i class="bi bi-share"></i> Share
+            </a>
+            <a href="#">
+              <i class="bi bi-send"></i> Send
+            </a>
+          </div>
+          <div class="post-comment-form">
+            <img src="img/user.png" alt="">
+            <div class="textarea">
+              <textarea name="" placeholder="Write comment" id="" cols="30" rows="10"></textarea>
+              <label>
+                <input type="file" accept="image/*">
+                <i class="bi bi-camera"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="sidebar">
+        <div class="widget widget-recommendation">
+          <h6>Add to Your Feeds</h6>
+          <ul>
+            <li>
+              <a href="#">
+                <span class="image">
+                  <img src="img/brand1.png" alt="" />
+                </span>
+                <span class="detail">
+                  <span class="name">Techin Asia Indonesia</span>
+                  <span class="sector"> Corporate - Online Media </span>
+                </span>
+                <a href="#">
+                  <i class="bi bi-plus"></i>
+                </a>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="image">
+                  <img src="img/brand2.png" alt="" />
+                </span>
+                <span class="detail">
+                  <span class="name">Figma Indonesia</span>
+                  <span class="sector"> Design Platform </span>
+                </span>
+                <a href="#">
+                  <i class="bi bi-plus"></i>
+                </a>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="image">
+                  <img src="img/brand3.png" alt="" />
+                </span>
+                <span class="detail">
+                  <span class="name">Uplabs</span>
+                  <span class="sector"> Design Marketplace </span>
+                </span>
+                <a href="#">
+                  <i class="bi bi-plus"></i>
+                </a>
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="widget-button"> See All Recommendation </a>
+        </div>
+        <div class="widget widget-marketing">
+          <h6>
+            <div>
+              Advertisement
+              <span class="description">
+                Get the latest news and job vacancies
+              </span>
+            </div>
+            <a href="#" class="more-btn">
+              <i class="bi bi-three-dots"></i>
+            </a>
+          </h6>
+          <div class="get-updates">
+            <div class="avatars">
+              <a href="#">
+                <img src="img/user-get-update.png" alt="" />
+              </a>
+              <a href="#">
+                <img src="img/brand4.png" alt="" />
+              </a>
+            </div>
+            <p>
+              Cameron, Get update from
+              <span>Interaction Design Foundations</span>
+            </p>
+          </div>
+          <a href="#" class="widget-button"> Visit Now </a>
+        </div>
+        <footer class="footer">
+          <nav>
+            <a href="#">About</a>
+            <a href="#">Help Center</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Privacy & Terms</a>
+            <a href="#">Ad Choices</a>
+            <a href="#">Advertising</a>
+            <a href="#">Business Services</a>
+            <a href="#">Get the Linkedin app</a>
+            <a href="#">More</a>
+          </nav>
+          <div class="copyright">
+            <p>LinkedIn Corporation © 2020</p>
+            <a href="#">
+              <img src="img/logo.svg" alt="" />
+            </a>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </main>
+
+  <div class="message-box">
+    <div class="message-header">
+      <div class="img online">
+        <img src="img/user.png" alt="">
+      </div>
+      Messaging
+      <div class="actions">
+        <a href="#">
+          <i class="bi bi-pencil-square"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-three-dots"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-chevron-up"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

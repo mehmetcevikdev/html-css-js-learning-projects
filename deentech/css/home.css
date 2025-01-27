@@ -1,0 +1,35 @@
+.home {
+    height: 1025px;
+    background: url(../images/backgroundimg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -174px;
+    margin-left: 230px;
+    display: flex;
+    align-items: center;
+}
+
+.home p {
+    margin: 776px 0 44px -230px;
+    font-size: 86px;
+    max-width: 580px;
+    line-height: 1;
+    color: #fff;
+    font-weight: 400;
+}
+
+.home p span {
+    font-weight: 300;
+}
+
+/*? sidebar start */
+
+.sidebar {
+    height: 1217px;
+    width: 492px;
+    background-color: #a6a6a6;
+    margin-left: -230px;
+    z-index: -1;
+}
+
+/*? sidebar end */

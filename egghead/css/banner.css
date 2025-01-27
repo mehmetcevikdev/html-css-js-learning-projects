@@ -1,0 +1,47 @@
+.banner {
+    background: linear-gradient(170deg, #212A39, #181E28);
+}
+
+.banner .container {
+    display: flex;
+    align-items: center;
+    padding: 70px 0;
+}
+
+.banner .container .banner-box {
+    width: 50%;
+}
+
+.banner .container .banner-box h1 {
+    font-size: 48px;
+    color: #fff;
+    line-height: 56px;
+    font-weight: 500;
+}
+
+.banner .container .banner-box h2 {
+    font-size: 24px;
+    color: #b0b6be;
+    margin-top: 10px;
+}
+
+.banner .container .banner-box .btn {
+    margin-top: 65px;
+}
+
+.banner .container .banner-image {
+    padding-left: 150px;
+}
+
+.banner .container .banner-image a {
+    transition: .2s ease transform;
+    display: block;
+}
+
+.banner .container .banner-image a:hover {
+    transform: scale(1.05);
+}
+
+.banner .container .banner-image a img {
+    max-width: 100%;
+}

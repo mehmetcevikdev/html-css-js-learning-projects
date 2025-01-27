@@ -1,0 +1,253 @@
+@import "https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #303236;
+    font-family: Muli, sans-serif;
+}
+
+/*! component search start */
+
+.component--search {
+    background-color: #3d3f43;
+    border-radius: 15px;
+    padding: 40px 45px;
+    box-shadow: 0 15px 25px -20px #202125;
+}
+
+.component--search form {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.component--search input {
+    padding-left: 53px;
+    height: 50px;
+    width: 100%;
+    background-color: #303236;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.component--search input::placeholder {
+    color: rgba(255, 255, 255, .5);
+}
+
+.component--search input:focus {
+    outline: none;
+}
+
+.component--search .search-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.component--search h6 {
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.component--search ul {
+    margin-top: 13px;
+}
+
+.component--search ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 7px 0;
+}
+
+.component--search ul li.active a,
+.component--search ul li a:hover {
+    color: #2ccdea;
+    font-weight: bold;
+}
+
+/*! component search end */
+
+/*! component filter search start */
+
+.component--filter-search {
+    background-color: #3d3f43;
+    border-radius: 5px;
+    box-shadow: 0 15px 25px -20px #202125;
+}
+
+.component--filter-search form {
+    padding: 14px;
+    height: 68px;
+    display: flex;
+}
+
+.component--filter-search .input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.component--filter-search form .input .search-icon {
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.component--filter-search .input input {
+    background: transparent;
+    border: none;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+}
+
+.component--filter-search input::placeholder {
+    color: rgba(#fff, .5);
+}
+
+.component--filter-search input:focus {
+    outline: none;
+}
+
+.component--filter-search form ul {
+    display: flex;
+    margin-left: 15px;
+}
+
+.component--filter-search form ul li label .text {
+    display: block;
+    height: 40px;
+    padding: 0 25px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+
+.component--filter-search form ul li label input {
+    display: none;
+}
+
+.component--filter-search form ul li label input:checked+.text {
+    background-color: #303236;
+    border-radius: 40px;
+    color: #2ccdea;
+}
+
+/*! component filter search end */
+
+/*! component filter start sass seklinde*/
+
+.component--filter {
+    background-color: #3d3f43;
+    border-radius: 15px;
+    padding: 40px 45px;
+    box-shadow: 0 15px 25px -20px #202125;
+
+    form {
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+
+                .key {
+                    width: 100px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #fff;
+                }
+
+                .value {
+                    flex: 1;
+
+                    select,
+                    input {
+                        height: 50px;
+                        width: 100%;
+                        background-color: #303236;
+                        border: none;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        color: #fff;
+                        padding: 0 20px;
+
+                        &:focus {
+                            outline: none;
+                        }
+
+                        &::placeholder {
+                            color: rgba(#fff, .5);
+                        }
+                    }
+
+                    select {
+                        cursor: pointer;
+                        appearance: none;
+                        background: #303236 url(img/arrow-down.svg) no-repeat calc(100% - 30px) center;
+                    }
+                }
+
+                &.filter-button {
+                    margin-top: 40px;
+                    border-top: 1px solid #303236;
+                    padding-top: 25px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    a {
+                        color: rgba(255, 255, 255, .5);
+                        text-decoration: none;
+                        font-size: 16px;
+
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+
+                    button {
+                        height: 50px;
+                        padding: 0 30px;
+                        display: flex;
+                        align-items: center;
+                        background: linear-gradient(to right, #31a5d9, #1e96a0);
+                        font-size: 16px;
+                        color: #fff;
+                        border: none;
+                        border-radius: 50px;
+                        cursor: pointer;
+                        box-shadow: 0 7px 10px 0 rgba(43, 45, 48, 0.5);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/*! component filter end */

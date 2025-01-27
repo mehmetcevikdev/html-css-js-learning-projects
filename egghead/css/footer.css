@@ -1,0 +1,88 @@
+.footer {
+    background-color: #141618;
+}
+
+.footer .container {
+    padding: 80px 0;
+}
+
+.footer .container .logo {
+    margin-bottom: 40px;
+}
+
+.footer .container .footer-nav {
+    display: flex;
+}
+
+.footer .container .footer-nav nav {
+    margin-right: 32px;
+}
+
+.footer .container .footer-nav nav h6 {
+    color: #fff;
+    margin-bottom: 15px;
+    letter-spacing: 1.2px;
+}
+
+.footer .container .footer-nav nav ul li {
+    margin-bottom: 6px;
+}
+
+.footer .container .footer-nav nav ul li a {
+    font-size: 16px;
+    color: #fff;
+    line-height: 150%;
+    opacity: .5;
+    transition: .2s ease opacity;
+}
+
+.footer .container .footer-nav nav ul li a:hover {
+    opacity: 1;
+}
+
+.footer .container .search {
+    margin-left: auto;
+}
+
+.footer .container .search h6 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.footer .container .search form {
+    display: flex;
+}
+
+.footer .container .search input {
+    width: 375px;
+    height: 48px;
+    background-color: #21252d;
+    padding: 0 15px;
+}
+
+.footer .container .search button {
+    width: 48px;
+    height: 48px;
+    background-color: #316aff;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, .05);
+    opacity: .5;
+    color: #fff;
+    margin-top: 25px;
+    padding-top: 25px;
+}
+
+.copyright a {
+    margin-right: 10px;
+    color: #fff;
+}
+
+.copyright .text {
+    margin-left: 10px;
+}
