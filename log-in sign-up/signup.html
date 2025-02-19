@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-wrapper">
+        <h1>Sign Up</h1>
+        <form>
+            <div class="input-wrapper">
+                <label for="username">Username<span>*</span></label>
+                <input type="text" id="username" placeholder="username" required>
+            </div>
+            <div class="input-wrapper">
+                <label for="email">Email<span>*</span></label>
+                <input type="text" id="email" placeholder="email@gmail.com" required>
+            </div>
+            <div class="input-wrapper">
+                <label for="password">Password<span>*</span></label>
+                <input type="password" id="password" placeholder="************" required>
+            </div>
+            <div class="input-wrapper">
+                <label for="number">Phone Number<span>*</span></label>
+                <input type="number" id="number" placeholder="123456789" required>
+            </div>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="checkbox" required>
+                <label for="checkbox">I agree with the site's <a href="#">policy</a> and <a href="#">terms</a></label>
+            </div>
+            <input class="btn" type="submit" value="Log In">
+        </form>
+        <p>You have an account? <a href="login.html">Log In</a></p>
+    </div>
+</body>
+</html>
