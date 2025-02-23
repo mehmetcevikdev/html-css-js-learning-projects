@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Favorite Tv Website</title>
+    <title>Favorite Tv Show</title>
 
     <link
       rel="stylesheet"
@@ -18,6 +18,7 @@
         <div class="logo">
           <img src="images/logo.png" alt="logo" />
         </div>
+        <input type="checkbox" id="check" />
         <ul class="menu-list">
           <li class="menu-list-item">
             <a href="#">Ana Sayfa</a>
@@ -32,18 +33,22 @@
             <a href="#episodes">Bölümler</a>
           </li>
           <li class="menu-list-item">
-            <a href="#footer">Sosyal Medya</a>
+            <a href="#footer">Hakkında</a>
           </li>
+          <div class="profile-container">
+            <div class="profile-picture">
+              <i class="bi bi-person-circle"></i>
+            </div>
+            <div class="profile-text-container">
+              <span class="profile-text">Hesabım</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </div>
+          </div>
+          <label for="check" class="close-menu"><i class="bi bi-x"></i></label>
         </ul>
-        <div class="profile-container">
-          <div class="profile-picture">
-            <i class="bi bi-person-circle"></i>
-          </div>
-          <div class="profile-text-container">
-            <span class="profile-text">Hesabım</span>
-            <i class="bi bi-caret-down-fill"></i>
-          </div>
-        </div>
+        <label for="check" class="open-menu">
+          <i class="bi bi-list"></i>
+        </label>
       </div>
     </header>
 
@@ -67,7 +72,7 @@
             <a
               href="https://m.imdb.com/title/tt2861424/?ref_=tt_ov_srs"
               target="_blank"
-              class="play-button"
+              class="imdb-button"
             >
               <i class="bi bi-play-circle"></i>
               IMDB
@@ -80,7 +85,7 @@
       </section>
     </div>
     <section id="characters">
-      <h1 class="title">Karakterler</h1>
+      <h2 class="title">Karakterler</h2>
       <div class="characters-wrapper">
         <ul class="characters-list">
           <li class="characters-item">
@@ -96,11 +101,9 @@
               >
 
               <p class="character-desc">
-                <span
-                  >Rick, dâhi ama alkolik bir bilim insanı olarak evrenler arası
-                  kaosu umursamaz bir nihilizmle kucaklayan, zeki ama kusurlu
-                  bir karakterdir.</span
-                >
+                Rick, dâhi ama alkolik bir bilim insanı olarak evrenler arası
+                kaosu umursamaz bir nihilizmle kucaklayan, zeki ama kusurlu bir
+                karakterdir.
               </p>
             </div>
           </li>
@@ -117,11 +120,9 @@
               >
 
               <p class="character-desc">
-                <span
-                  >Morty, saf ama iyi niyetli, genellikle Rick’in çılgın
-                  maceralarına sürüklenen, korkak ama zamanla cesaret kazanan
-                  bir gençtir.</span
-                >
+                Morty, saf ama iyi niyetli, genellikle Rick’in çılgın
+                maceralarına sürüklenen, korkak ama zamanla cesaret kazanan bir
+                gençtir.
               </p>
             </div>
           </li>
@@ -138,11 +139,9 @@
               >
 
               <p class="character-desc">
-                <span
-                  >Summer, Morty’nin ablası olarak kendini kanıtlamaya çalışan,
-                  zeki, cesur ve zaman zaman bencil ama ailesine bağlı bir
-                  gençtir.</span
-                >
+                Summer, Morty’nin ablası olarak kendini kanıtlamaya çalışan,
+                zeki, cesur ve zaman zaman bencil ama ailesine bağlı bir
+                gençtir.
               </p>
             </div>
           </li>
@@ -159,11 +158,9 @@
               >
 
               <p class="character-desc">
-                <span
-                  >President Curtis, kendini beğenmiş, karizmatik ve politik
-                  entrikalara alışkın, Rick'e karşı hem hayranlık duyan hem de
-                  onunla rekabet eden ABD Başkanıdır.</span
-                >
+                President Curtis, kendini beğenmiş, karizmatik ve politik
+                entrikalara alışkın, Rick'e karşı hem hayranlık duyan hem de
+                onunla rekabet eden ABD Başkanıdır.
               </p>
             </div>
           </li>
@@ -180,11 +177,9 @@
               >
 
               <p class="character-desc">
-                <span
-                  >Beth, Rick’in kızı ve Morty’nin annesi olarak, güçlü ama
-                  içsel olarak kırılgan, babasının onayını arayan, zeki ve zaman
-                  zaman sert bir veteriner cerrahıdır.</span
-                >
+                Beth, Rick’in kızı ve Morty’nin annesi olarak, güçlü ama içsel
+                olarak kırılgan, babasının onayını arayan, zeki ve zaman zaman
+                sert bir veteriner cerrahıdır.
               </p>
             </div>
           </li>
@@ -201,9 +196,9 @@
               >
 
               <p class="character-desc">
-                <span
-                  >Jerry, Beth’in kocası ve Morty’nin babası olarak, güvensiz, saf ve genellikle beceriksiz ama iyi niyetli bir karakterdir. Çoğu zaman Rick’in alaylarının hedefi olur.</span
-                >
+                Jerry, Beth’in kocası ve Morty’nin babası olarak, güvensiz, saf
+                ve genellikle beceriksiz ama iyi niyetli bir karakterdir. Çoğu
+                zaman Rick’in alaylarının hedefi olur.
               </p>
             </div>
           </li>
@@ -211,13 +206,193 @@
       </div>
     </section>
     <section id="favorite-scene">
-        <h1 class="title"></h1>
-        <div class="video-wrapper">
-            <a href="" class="video"></a>
-            <div class="desc"></div>
+      <h2 class="title">Favori Sahne</h2>
+      <div class="watch-video">
+        <div class="video-container">
+          <div class="video">
+            <video
+              src="images/video/sahne.mp4"
+              controls=""
+              poster="images/picklerick.jpg"
+              id="video"
+            ></video>
+          </div>
+
+          <div class="info">
+            <p class="description">
+              Pickle Rick, terapiye gitmemek için kendini turşuya dönüştürür ve
+              kanalizasyonda hayatta kalmak için bir çekirgeyi öldürüp iç
+              sıvılarını enerji kaynağı olarak kullanır. Sonrasında fareleri
+              öldürüp onların kemik ve kas yapısıyla kendine mekanik bir beden
+              yapar, böylece savunmasız bir turşudan güçlü bir savaş makinesine
+              dönüşür.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
-    <section id="episodes"></section>
-    <footer id="footer"></footer>
+    <section id="episodes">
+      <h1 class="title">Bölümler</h1>
+      <div class="episodes-wrapper">
+        <div class="episodes-item" data-id="1">
+          <a
+            href="https://m.imdb.com/title/tt4832268/?ref_=sr_t_8"
+            target="_blank"
+            class="episode"
+          >
+            <div class="image-wrapper">
+              <img src="images/microverse.jpg" alt="" />
+              <i class="bi bi-play-circle play-btn"></i>
+              <span class="watch">İzle</span>
+            </div>
+            <h3>The Ricks Must Be Crazy</h3>
+          </a>
+          <button class="bookmark">
+            <i class="bi bi-bookmark"></i>
+          </button>
+          <p class="desc">
+            Rick arabasıyla ilgili sorun yaşıyor ve bunu düzeltmek için mikro
+            evrene seyahat etmeleri gerekiyor.
+          </p>
+        </div>
+        <div class="episodes-item" data-id="2">
+          <a
+            href="https://m.imdb.com/title/tt5218268/?ref_=sr_t_10"
+            target="_blank"
+            class="episode"
+          >
+            <div class="image-wrapper">
+              <img src="images/picklerick.jpg" alt="" />
+              <i class="bi bi-play-circle play-btn"></i>
+              <span class="watch">İzle</span>
+            </div>
+            <h3>Pickle Rick</h3>
+          </a>
+          <button class="bookmark">
+            <i class="bi bi-bookmark"></i>
+          </button>
+          <p class="desc">
+            Rick kendini bir turşuya çevirirken Beth, Summer ve Morty aile
+            terapisine gider.
+          </p>
+        </div>
+        <div class="episodes-item" data-id="3">
+          <a
+            href="https://m.imdb.com/title/tt14889190/?ref_=sr_t_22"
+            target="_blank"
+            class="episode"
+          >
+            <div class="image-wrapper">
+              <img src="images/mortypolisty.jpg" alt="" />
+              <i class="bi bi-play-circle play-btn"></i>
+              <span class="watch">İzle</span>
+            </div>
+            <h3>Mortyplicity</h3>
+          </a>
+          <button class="bookmark">
+            <i class="bi bi-bookmark"></i>
+          </button>
+          <p class="desc">
+            Smith ailesi avlandıklarından şüphelenir. Ama kim gerçekten gerçek?
+          </p>
+        </div>
+        <div class="episodes-item" data-id="4">
+          <a
+            href="https://m.imdb.com/title/tt3333834/?ref_=sr_t_12"
+            target="_blank"
+            class="episode"
+          >
+            <div class="image-wrapper">
+              <img src="images/rickpotion.jpg" alt="" />
+              <i class="bi bi-play-circle play-btn"></i>
+              <span class="watch">İzle</span>
+            </div>
+            <h3>Rick Potion</h3>
+          </a>
+          <button class="bookmark">
+            <i class="bi bi-bookmark"></i>
+          </button>
+          <p class="desc">
+            Rick, Morty'ye okul dansı için bir aşk iksiri verir, ancak serum
+            grip ile birleşip hızla yayılınca, Rick ve Morty krizi çözmeye
+            çalışırken durumu daha da kötüleştirir.
+          </p>
+        </div>
+        <div class="episodes-item" data-id="5">
+          <a
+            href="https://m.imdb.com/title/tt4832276/?ref_=sr_t_29"
+            target="_blank"
+            class="episode"
+          >
+            <div class="image-wrapper">
+              <img src="images/purging.jpg" alt="" />
+              <i class="bi bi-play-circle play-btn"></i>
+              <span class="watch">İzle</span>
+            </div>
+            <h3>Look Who's Purging Now</h3>
+          </a>
+          <button class="bookmark">
+            <i class="bi bi-bookmark"></i>
+          </button>
+          <p class="desc">
+            Rick ve Morty, gemilerini tamir etmek için bir uzaylı gezegenine
+            varır, ancak tam o sırada orada "temizlik günü" başlar.
+          </p>
+        </div>
+        <div class="episodes-item" data-id="6">
+          <a
+            href="https://m.imdb.com/title/tt5218350/?ref_=sr_t_16"
+            target="_blank"
+            class="episode"
+          >
+            <div class="image-wrapper">
+              <img src="images/mindblowers.jpg" alt="" />
+              <i class="bi bi-play-circle play-btn"></i>
+              <span class="watch">İzle</span>
+            </div>
+            <h3>Morty's Mind Blowers</h3>
+          </a>
+          <button class="bookmark">
+            <i class="bi bi-bookmark"></i>
+          </button>
+          <p class="desc">
+            Rick, Morty'ye "Morty'nin akıl uçuranları"nı gösterir—Morty'nin
+            Rick’ten zihninden silmesini istediği anıların bir koleksiyonunu.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <ul class="footer-menu">
+        <li class="footer-item">
+          <div class="creator">
+            <h4>Oluşturucu</h4>
+            <p>Mehmet Çevik</p>
+          </div>
+        </li>
+        <li class="footer-item">
+          <h4>Sosyal medya</h4>
+          <div class="social">
+            <a href="https://www.instagram.com/mehmet_cvk20/">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@frontendweekly">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a href="https://www.tiktok.com/@frontendweekly">
+              <i class="bi bi-tiktok"></i>
+            </a>
+            <a href="https://github.com/mehmetcevikdev">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mehmetcevik20/">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
