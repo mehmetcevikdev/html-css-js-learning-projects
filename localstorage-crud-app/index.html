@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage - Crud</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>CRUD - LOCALSTORAGE</h1>
+        <form id="form">
+            <input type="text" autocomplete="off" placeholder="add new user" id="name">
+            <button class="success">
+                <i class="fas fa-plus"></i>
+            </button>
+        </form>
+        <div class="user" id="nameList">
+            <div class="user-item">
+                <p>
+                    <i class="fas fa-user"></i>
+                    <span>User :</span> isim
+                </p>
+                <div class="buttons">
+                    <button class="primary" onclick="Edit()">
+                        <i class="fas fa-edit"></i>
+                        Edit
+                    </button>
+                    <button class="danger" onclick="Delete()">
+                        <i class="fas fa-trash"></i>
+                        Delete
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        <!--! localStorage kisa ozet  -->
+        /*  const userList = ['emin','fatma','eylul','bedo']
+         localStorage.setItem('names',JSON.stringify(userList))
+         localStorage.setItem('userList',JSON.stringify(userList))
+         const getStorage = JSON.parse(localStorage.getItem('names'))
+         localStorage.removeItem('names')
+ 
+         userList.splice(1,1)
+         localStorage.setItem('userList',JSON.stringify(userList))
+ 
+         const nameList = document.querySelector('#nameList')
+         nameList.innerHTML = getStorage */
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

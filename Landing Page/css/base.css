@@ -1,0 +1,131 @@
+/*! base css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+textarea {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Texts */
+
+.text-center {
+    text-align: center;
+}
+
+.heading-small {
+    font-size: 2rem;
+}
+
+.heading-medium {
+    font-size: 2.4rem;
+}
+
+.heading-big {
+    font-size: 2.8rem;
+}
+
+/* colors */
+
+:root {
+    --bg-dark-blue: #062e51;
+    --bg-light-blue: #336ea2;
+}
+
+.bg-dark-blue {
+    background-color: #062e51;
+}
+
+.bg-light-blue {
+    background-color: #336ea2;
+}
+
+.btn {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    padding: 1.28rem 4.8rem;
+    background: var(--bg-light-blue);
+    border-radius: 4px;
+    transition: background .3s ease;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background: var(--bg-light-blue);
+    border: 1px solid var(--bg-light-blue);
+}
+
+.btn-primary:hover {
+    background: #fff;
+    color: var(--bg-light-blue);
+}
+
+.btn-dark {
+    background: #333;
+    border: 1px solid #333;
+}
+
+.btn-dark:hover {
+    background: #fff;
+    color: #333;
+}
+
+.btn-block {
+    width: 100%;
+    text-align: center;
+    background: #fff;
+    border-radius: 4px;
+    transition: all .2s ease;
+}
+
+.btn-block:hover {
+    background: var(--bg-light-blue);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* container */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* forms */
+.form-group {
+    padding: .4rem 0;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: .64rem;
+    font-size: 1.6rem;
+    resize: none;
+    border-radius: 4px;
+}

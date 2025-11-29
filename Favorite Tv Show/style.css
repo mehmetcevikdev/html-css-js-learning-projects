@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: #212121;
+  color: #fff;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section,
+header,
+footer {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 32px;
+  padding-left: 12px;
+  display: flex;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.title::before {
+  background: #f5c518;
+  border-radius: 4px;
+  content: "";
+  margin-left: -12px;
+  align-self: flex-start;
+  position: absolute;
+  height: 100%;
+  width: 4px;
+}
+
+/*! Header section Start */
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #212121;
+  border-bottom: 1px solid #999;
+}
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+.logo img {
+  width: 100%;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.profile-container .profile-picture {
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.profile-container .profile-text-container {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  column-gap: 5px;
+  cursor: pointer;
+}
+
+.open-menu,
+.close-menu {
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  display: none;
+}
+
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.close-menu {
+  top: -8px;
+  right: 20px;
+}
+
+#check {
+  display: none;
+}
+
+/*! Header section end  */
+
+/*! Banner section start  */
+
+.banner {
+  height: calc(100vh - 122px);
+}
+
+.banner-wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.banner-left {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.banner-right {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-right img,
+.banner-left img {
+  width: 100%;
+}
+
+.banner-desc {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.banner-buttons .imdb-button {
+  display: inline-block;
+  background-color: #e2b616;
+  color: #000;
+  padding: 10px 25px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 16px;
+  column-gap: 10px;
+  cursor: pointer;
+}
+
+.banner-buttons .imdb-button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+/*! Banner section end  */
+
+/*! Characters section start  */
+
+#characters {
+  padding-top: 61px;
+}
+
+.characters-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.characters-item {
+  display: flex;
+  gap: 10px;
+}
+
+.profile-pic img {
+  height: 96px;
+  width: 96px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.voice-actor-name {
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.character-desc {
+  font-size: 14px;
+}
+
+/*! Characters section end  */
+
+/*! favorite scene section start  */
+
+#favorite-scene {
+  padding-top: 61px;
+}
+
+.video-container {
+  border-radius: 10px;
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+#favorite-scene .description {
+  width: 100%;
+}
+
+/*! favorite scene section end  */
+
+/*! episodes section start  */
+
+#episodes {
+  padding-top: 61px;
+}
+
+.episodes-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.episodes-item {
+  position: relative;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.episode .image-wrapper img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.1s ease;
+}
+
+.bookmark {
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  display: none;
+}
+
+.bookmark i {
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.play-btn {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.watch {
+  position: absolute;
+  bottom: 15px;
+  left: 45px;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  z-index: 2;
+}
+
+.episodes-item:hover img {
+  opacity: 0.7;
+}
+
+.episodes-item:hover .play-btn {
+  color: #e2b616;
+}
+
+.episodes-item:hover .bookmark {
+  display: flex;
+}
+
+.bookmark:hover i {
+  color: #e2b616;
+}
+
+.bookmark.active i {
+  color: #e2b616;
+}
+
+/*! episodes section end  */
+
+/*! footer section start  */
+
+#footer {
+  margin-top: 61px;
+  padding: 20px 20px;
+  border-top: 1px solid #999;
+  text-align: center;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between; /* İçeriği iki yana yasla */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.footer-item {
+  flex: 1;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social a {
+  font-size: 20px;
+}
+
+.social a:hover {
+  opacity: 0.8;
+}
+
+/*! footer section end  */
+
+/*! media query start  */
+
+@media (max-width: 1280px) {
+  section,
+  header,
+  footer {
+    max-width: 1024px;
+  }
+}
+@media (max-width: 1024px) {
+  section,
+  header,
+  footer {
+    max-width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  section,
+  header,
+  footer {
+    max-width: 576px;
+  }
+
+  .banner-right {
+    display: none;
+  }
+
+  .header .menu-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 20px;
+    right: -100%;
+    z-index: 100;
+    background-color: #212121;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+
+  #check:checked ~ .menu-list {
+    right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  section,
+  header,
+  footer {
+    max-width: 480px;
+  }
+
+  .title{
+    font-size: 24px;
+  }
+
+  .banner-desc {
+    font-size: 13px;
+  }
+
+  .banner-buttons .imdb-button{
+    font-size: 13px;
+  }
+
+  .voice-actor-name{
+    font-size: 14px;
+  }
+
+  .character-desc{
+    font-size: 12px;
+  }
+
+  .watch-video .info .description{
+    font-size: 13px;
+  }
+
+  .episodes-item .episode h3{
+    font-size: 16px;
+  }
+
+  .episodes-item .desc {
+    font-size: 13px;
+  }
+
+  .footer-item h4{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  section,
+  header,
+  footer {
+    max-width: 320px;
+  }
+}
+
+/*! media query end  */

@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+
+/*! base css start */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Electrolize", sans-serif;
+}
+
+.container {
+  background-color: #000;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+/*! base css end */
+
+/*! header start */
+
+.header {
+  background: #000;
+  color: #fff;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 50px;
+}
+
+.header-wrapper .logo {
+  font-size: 30px;
+  color: rgb(255, 70, 70);
+  cursor: pointer;
+}
+
+.menu-container .menu-list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.menu-container .menu-list-item {
+  transition: 0.2s ease all;
+  cursor: pointer;
+}
+
+.menu-container .menu-list-item:hover {
+  font-weight: bold;
+}
+
+.menu-container .menu-list-item.active {
+  font-weight: bold;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.profile-container .profile-picture {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-container .profile-text-container {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  column-gap: 5px;
+}
+
+.toggle {
+  width: 40px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.profile-container .toggle-icon {
+  color: goldenrod;
+}
+
+.profile-container .toggle-ball {
+  width: 18px;
+  height: 18px;
+  background-color: #000;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 1px;
+  transition: .3s ease all;
+}
+
+/*! header end */
+
+/*! sidebar start */
+.sidebar {
+  background: #000;
+  color: #fff;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+  padding-top: 60px;
+  position: fixed;
+  top: 0;
+}
+
+.sidebar i {
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*! sidebar end */
+
+/*! content start */
+
+.content-wrapper {
+  margin-left: 50px;
+}
+
+/*? featured content start */
+
+.featured-content {
+  background: url(img/spiderman.jpg);
+  background-size: 100% 100%;
+  height: calc(100vh - 160px);
+  padding: 50px;
+}
+
+.featured-title {
+  width: 500px;
+}
+
+.featured-desc {
+  width: 500px;
+  font-size: 17px;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #000;
+  margin: 30px 0;
+  padding: 10px;
+}
+
+.featured-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.featured-buttons .info-button {
+  background-color: rgba(145, 142, 142, 0.7);
+  color: #fff;
+}
+
+.featured-buttons button {
+  background-color: #fff;
+  padding: 10px 25px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  column-gap: 10px;
+  cursor: pointer;
+}
+
+/*? featured content end */
+
+/*? filter start */
+
+.movie-list-filter {
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.movie-list-filter select {
+  background-color: #000;
+  color: #fff;
+  width: 125px;
+  padding: 7px 0;
+}
+
+/*? filter end */
+
+/*? movie list start */
+
+.movie-list-container {
+  padding: 0 20px;
+}
+
+.movie-list-container .movie-list-title {
+  line-height: 1;
+}
+
+.movie-list-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.movie-list {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  transform: translateX(0);
+  transition: 0.8s ease-in-out all;
+}
+
+.movie-list .movie-item {
+  position: relative;
+}
+
+.movie-list .movie-item:hover .movie-item-title,
+.movie-list .movie-item:hover .movie-item-buttons {
+  opacity: 1;
+}
+
+.movie-list .movie-item-img {
+  transition: 0.8s all ease-in;
+  width: 270px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.movie-item:hover .movie-item-img {
+  transform: scale(1.2);
+  margin: 0 30px;
+  opacity: 0.5;
+}
+
+.movie-item-info .movie-item-title {
+  position: absolute;
+  top: 10%;
+  left: 50px;
+  background-color: rgb(40, 40, 40, 0.4);
+  font-size: 28px;
+  font-weight: bold;
+  padding: 0 10px;
+  opacity: 0;
+  transition: 0.8s ease-in-out all;
+}
+
+.movie-item-info .movie-item-buttons {
+  position: absolute;
+  bottom: 10%;
+  left: 50px;
+  display: flex;
+  column-gap: 20px;
+  padding: 10px;
+  background-color: rgb(40, 40, 40, 0.4);
+  font-size: 20px;
+  opacity: 0;
+  transition: 0.8s ease-in-out all;
+}
+
+.movie-item-buttons i {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.2s ease all;
+}
+
+.movie-item-buttons i:hover {
+  opacity: 1;
+}
+
+.arrow {
+  width: 100px;
+  display: flex;
+  font-size: 120px;
+  position: absolute;
+  right: 0;
+  top: 100px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s ease all;
+}
+
+.arrow:hover {
+  opacity: 1;
+}
+
+/*? movie list end */
+
+/*! content end */
+
+/*! dark mode start */
+
+.container.active {
+  background-color: #fff;
+}
+
+.header.active {
+  background-color: #fff;
+  color: #000;
+}
+
+.sidebar.active {
+  background-color: #fff;
+}
+
+.sidebar i.active {
+  color: #000;
+}
+
+.movie-list-title.active {
+  color: #000;
+}
+
+.toggle.active {
+  background-color: #000;
+}
+
+.profile-container .toggle-ball.active {
+  background-color: #fff;
+  transform: translateX(-20px);
+}
+
+.movie-list-filter select.active {
+  background-color: #fff;
+  color: #000;
+}
+
+/*! dark mode end */
+
+/*! responsive start */
+
+@media only screen and (max-width: 800px) {
+  .menu-container {
+    display: none;
+  }
+
+  .featured-content {
+    height: 50vh;
+  }
+
+  .featured-title {
+    width: 200px;
+  }
+
+  .featured-desc {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    max-width: 200px;
+    padding: 0;
+  }
+}
+
+/*! responsive end */

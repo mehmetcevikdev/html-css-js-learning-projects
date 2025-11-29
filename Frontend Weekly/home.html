@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Weekly - Home</title>
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!--! header start -->
+    <header class="header">
+        <section class="header-flex">
+            <a href="home.html" class="header-logo">Frontend Weekly</a>
+            <form action="" method="post" class="search-form">
+                <input type="text" name="search_box" placeholder="Videoları Ara" required maxlength="100">
+                <button type="submit" class="fas fa-search" name="search_box"></button>
+            </form>
+            <div class="header-icons">
+                <div id="menu-btn" class="icon fas fa-bars"></div>
+                <div id="search-btn" class="icon fas fa-search"></div>
+                <div id="user-btn" class="icon fas fa-user"></div>
+                <div id="toggle-btn" class="icon fas fa-sun"></div>
+            </div>
+            <div class="profile">
+                <img class="profile-img" src="images/pic-1.jpg" alt="">
+                <h3 class="profile-name">Mehmet Çevik</h3>
+                <p class="profile-role">Frontend Developer</p>
+                <a href="profile.html" class="btn">View Profile</a>
+                <div class="flex-btn">
+                    <a href="login.html" class="btn option-btn">Login</a>
+                    <a href="register.html" class="btn option-btn">Register</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!--! header end -->
+
+    <!--! sidebar start -->
+
+    <div class="sidebar">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="profile">
+            <img class="profile-img" src="images/pic-1.jpg" alt="">
+            <h3 class="profile-name">Mehmet Çevik</h3>
+            <p class="profile-role">Frontend Developer</p>
+            <a href="profile.html" class="btn">View Profile</a>
+        </div>
+        <nav class="navbar">
+            <a href="home.html" class="navbar-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="about.html" class="navbar-item">
+                <i class="fas fa-question"></i>
+                <span>About</span>
+            </a>
+            <a href="courses.html" class="navbar-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Courses</span>
+            </a>
+            <a href="teachers.html" class="navbar-item">
+                <i class="fas fa-code"></i>
+                <span>Teachers</span>
+            </a>
+            <a href="contact.html" class="navbar-item">
+                <i class="fas fa-headset"></i>
+                <span>Contact Us</span>
+            </a>
+        </nav>
+    </div>
+
+    <!--! sidebar end -->
+
+    <!--! home-content start -->
+
+    <section class="home-content">
+        <h1 class="heading">quick options</h1>
+        <div class="content-box-container">
+            <div class="content-box">
+                <h3 class="title">likes and comments</h3>
+                <p class="likes">
+                    total likes :
+                    <span>25</span>
+                </p>
+                <a href="#" class="inline-btn">view likes</a>
+                <p class="likes">
+                    total comments :
+                    <span>12</span>
+                </p>
+                <a href="#" class="inline-btn">view comments</a>
+                <p class="likes">
+                    saved playlists :
+                    <span>4</span>
+                </p>
+                <a href="#" class="inline-btn">view playlists</a>
+            </div>
+            <div class="content-box">
+                <h3 class="title">top categories</h3>
+                <div class="box-flex">
+                    <a href="#">
+                        <i class="fas fa-code"></i>
+                        <span>development</span>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-chart-simple"></i>
+                        <span>business</span>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-pen"></i>
+                        <span>design</span>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-chart-line"></i>
+                        <span>marketing</span>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-music"></i>
+                        <span>music</span>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-camera"></i>
+                        <span>photography</span>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <span>software</span>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-vial"></i>
+                        <span>science</span>
+                    </a>
+                </div>
+            </div>
+            <div class="content-box">
+                <h3 class="title">popular topics</h3>
+                <div class="box-flex">
+                    <a href="#">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML</span>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-css3"></i>
+                        <span>CSS</span>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-js"></i>
+                        <span>javascript</span>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-react"></i>
+                        <span>react</span>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-php"></i>
+                        <span>PHP</span>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-bootstrap"></i>
+                        <span>bootstrap</span>
+                    </a>
+                </div>
+            </div>
+            <div class="content-box">
+                <h3 class="title">become a tutor</h3>
+                <p class="tutor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, nulla.</p>
+                <a href="teachers.html" class="inline-btn">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!--! home-content end -->
+
+    <!--! courses start -->
+
+    <section class="courses">
+        <h1 class="heading">Our courses</h1>
+        <div class="courses-box-container">
+            <div class="courses-box">
+                <div class="content-owner">
+                    <img class="avatar" src="images/pic-6.jpg" alt="">
+                    <div class="info">
+                        <h3 class="name">mehmet çevik</h3>
+                        <span class="date">26-05-2024</span>
+                    </div>
+                </div>
+                <div class="thumb">
+                    <img src="images/thumb-1.png" alt="">
+                    <span>10 videos</span>
+                </div>
+                <h3 class="title">how to make falan filan</h3>
+                <a href="course-playlist.html" class="inline-btn">View Playlist</a>
+            </div>
+            <div class="courses-box">
+                <div class="content-owner">
+                    <img class="avatar" src="images/pic-6.jpg" alt="">
+                    <div class="info">
+                        <h3 class="name">mehmet çevik</h3>
+                        <span class="date">26-05-2024</span>
+                    </div>
+                </div>
+                <div class="thumb">
+                    <img src="images/thumb-2.png" alt="">
+                    <span>10 videos</span>
+                </div>
+                <h3 class="title">how to make falan filan</h3>
+                <a href="course-playlist.html" class="inline-btn">View Playlist</a>
+            </div>
+            <div class="courses-box">
+                <div class="content-owner">
+                    <img class="avatar" src="images/pic-6.jpg" alt="">
+                    <div class="info">
+                        <h3 class="name">mehmet çevik</h3>
+                        <span class="date">26-05-2024</span>
+                    </div>
+                </div>
+                <div class="thumb">
+                    <img src="images/thumb-3.png" alt="">
+                    <span>10 videos</span>
+                </div>
+                <h3 class="title">how to make falan filan</h3>
+                <a href="course-playlist.html" class="inline-btn">View Playlist</a>
+            </div>
+            <div class="courses-box">
+                <div class="content-owner">
+                    <img class="avatar" src="images/pic-6.jpg" alt="">
+                    <div class="info">
+                        <h3 class="name">mehmet çevik</h3>
+                        <span class="date">26-05-2024</span>
+                    </div>
+                </div>
+                <div class="thumb">
+                    <img src="images/thumb-4.png" alt="">
+                    <span>10 videos</span>
+                </div>
+                <h3 class="title">how to make falan filan</h3>
+                <a href="course-playlist.html" class="inline-btn">View Playlist</a>
+            </div>
+            <div class="courses-box">
+                <div class="content-owner">
+                    <img class="avatar" src="images/pic-6.jpg" alt="">
+                    <div class="info">
+                        <h3 class="name">mehmet çevik</h3>
+                        <span class="date">26-05-2024</span>
+                    </div>
+                </div>
+                <div class="thumb">
+                    <img src="images/thumb-5.png" alt="">
+                    <span>10 videos</span>
+                </div>
+                <h3 class="title">how to make falan filan</h3>
+                <a href="course-playlist.html" class="inline-btn">View Playlist</a>
+            </div>
+            <div class="courses-box">
+                <div class="content-owner">
+                    <img class="avatar" src="images/pic-6.jpg" alt="">
+                    <div class="info">
+                        <h3 class="name">mehmet çevik</h3>
+                        <span class="date">26-05-2024</span>
+                    </div>
+                </div>
+                <div class="thumb">
+                    <img src="images/thumb-6.png" alt="">
+                    <span>10 videos</span>
+                </div>
+                <h3 class="title">how to make falan filan</h3>
+                <a href="course-playlist.html" class="inline-btn">View Playlist</a>
+            </div>
+
+
+
+        </div>
+        <div class="more-btn">
+            <a href="courses.html" class="inline-option-btn ">
+                view all courses
+            </a>
+        </div>
+    </section>
+
+    <!--! courses end -->
+
+
+
+
+
+    <!--! footer start -->
+
+    <div class="footer">
+        &copy; copyright @ 2024 by <a href="https://www.youtube.com/@frontendweekly">Frontend Weekly</a> | all rights
+        reserved!
+    </div>
+
+    <!--! footer end -->
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

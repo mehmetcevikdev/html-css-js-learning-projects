@@ -1,0 +1,113 @@
+.about {
+  .about-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    .about-image {
+      flex-basis: 40rem;
+      flex-shrink: 1;
+      flex-grow: 1;
+      
+      img{
+        height: 50rem;
+        width: 100%;
+      }
+    }
+    .about-content {
+      flex-basis: 40rem;
+      flex-shrink: 1;
+      flex-grow: 1;
+
+      h3{
+        font-size: 3rem;
+        color: var(--black);
+      }
+      p{
+        font-size: 1.7rem;
+        color: var(--light-color);
+        padding: 1rem 0;
+        line-height: 2;
+      }
+    }
+  }
+  .about-success-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem,1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+
+    .success-box{
+        padding: 20px;
+        background-color: var(--white);
+        border-radius: .5rem;
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+
+        i{
+            font-size: 4rem;
+            color: var(--main-color);
+        }
+
+        .success-content{
+            h3{
+                font-size: 2.5rem;
+                color: var(--black);
+                margin-bottom: 0.3rem;
+            }
+            p{
+                font-size: 1.7rem;
+                color: var(--light-color);
+                
+            }
+        }
+    }
+  }
+
+}
+
+.reviews{
+  .review-box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+
+    .review-box{
+      background-color: var(--white);
+      border-radius: .5rem;
+      padding: 2rem;
+
+      .review{
+        font-size: 1.7rem;
+        color: var(--light-color);
+        line-height: 1.7;
+      }
+
+      .review-owner{
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 2rem;
+
+        .review-avatar{
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%;
+        }
+
+        h3{
+          font-size: 2rem;
+          color: var(--black);
+          margin-bottom: .3rem;
+        }
+
+        .stars{
+          font-size: 1.5rem;
+          color: var(--orange);
+        }
+      }
+    }
+  }
+}

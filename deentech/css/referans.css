@@ -1,0 +1,93 @@
+.referans {
+    background-color: #a6a6a6;
+    height: 647px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px;
+    padding-right: 100px;
+}
+
+.referanslar {
+    background-color: #5a5a5a;
+    width: 814px;
+    height: 707px;
+    padding: 100px 0 0 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+}
+
+.referanslar .item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.referanslar .red-line {
+    width: 221px;
+    height: 9px;
+    position: absolute;
+    top: 101px;
+    right: -128px;
+    background-color: #ef4a36;
+}
+
+.referans .referans-desc {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    max-width: 800px;
+}
+
+.referans-desc .brand {
+    font-size: 25px;
+    color: #5a5a5a;
+    font-weight: 300;
+}
+
+.referans-desc .brand span {
+    font-weight: 600;
+}
+
+.referans-desc h1 {
+    font-size: 68px;
+    font-weight: 300;
+    color: #838383;
+    line-height: .8;
+    margin-bottom: 50px;
+}
+
+.referans-desc span {
+    font-weight: 500;
+    color: #5a5a5a;
+    line-height: 1;
+}
+
+.referans-desc p {
+    font-size: 25px;
+    color: #43434f;
+}
+
+.referenzen {
+    background: url(/images/referenzen.png);
+    background-size: cover;
+    background-position: center;
+    height: 342px;
+    display: flex;
+    justify-content: center;
+}
+
+.referenzen .item {
+    width: 462px;
+    height: 103px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 90px;
+}
+
+.referenzen .item span {
+    color: #ef4a36;
+    font-size: 30px;
+}

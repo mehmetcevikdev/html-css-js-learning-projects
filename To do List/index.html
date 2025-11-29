@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yapılacaklar Listesi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Yapılacaklar Listesi</h1>
+      <form id="todo-form">
+        <div class="todo-inputs">
+          <input type="text" id="todo-title" placeholder="Başlığı giriniz!" />
+          <input
+            type="text"
+            id="todo-desc"
+            placeholder="Açıklamanızı giriniz"
+          />
+        </div>
+        <div class="priority">
+          <label>Öncelik:</label>
+          <label
+            ><input type="radio" name="priority" value="Düşük" />Düşük</label
+          >
+          <label><input type="radio" name="priority" value="Orta" />Orta</label>
+          <label
+            ><input type="radio" name="priority" value="Yüksek" />Yüksek</label
+          >
+        </div>
+        <button class="btn" type="submit">Ekle</button>
+      </form>
+      <div class="filter-wrapper">
+        <button id="sort-priority" class="filter-btn">Sırala</button>
+        <button id="filter-completed" class="filter-btn">Tamamlananlar</button>
+      </div>
+      <table class="list-table">
+        <th>Başlık</th>
+        <td>Açıklama</td>
+      </table>
+      <ul id="todo-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

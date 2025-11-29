@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(magara.jpg);
+  background-size: cover;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* header start */
+
+header {
+  height: 100px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.06);
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+nav .logo {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+nav .menu{
+  display: flex;
+  align-items: center;
+  column-gap: 48px;
+}
+
+nav .menu-list{
+  display: flex;
+  column-gap: 30px;
+}
+
+nav .menu-list-item a{
+  transition: .2s ease all;
+}
+
+nav .menu-list-item a:hover{
+  color: #0ba2c0;
+}
+
+nav .menu .menu-btn{
+  color: #0ba2c0;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 12px 24px;
+  border-radius: 56px;
+  transition: .2s ease all;
+}
+
+nav .menu .menu-btn:hover{
+  background-color: #0ba2c0;
+  color: white;
+}
+
+/* header end */
+
+/* contect start */
+
+section {
+  padding-top: 150px;  
+  color: white;
+  height: calc(100vh - 100px);
+}
+
+section h1{
+  font-size: 60px;
+  text-align: center;
+}
+
+section p {
+  font-size: 24px;
+  margin-top: 32px;
+  text-align: center;
+}
+
+section .content-buttons{
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  column-gap: 16px;
+}
+
+section .content-buttons a{
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 56px;
+  width: 280px;
+  text-align: center;
+  font-size: 18px;
+  transition: .2s ease all;
+}
+
+section .content-buttons a:hover{
+  background-color: #0ba2c0;
+  color: white;
+}
+
+/* contect end */
+
+
+
+/* responsive */
+
+@media (max-width: 576px) {
+  nav .menu .menu-btn{
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  section{
+    padding-top: 50px;
+  }
+  
+  section h1{
+    font-size: 36px;
+  }
+  
+  section p{
+    font-size: 16px;
+  }
+  
+  section .content-buttons{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+  }
+  
+  section .content-buttons a{
+    padding: 14px;
+    width: 90%;
+  }
+}
