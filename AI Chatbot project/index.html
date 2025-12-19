@@ -29,13 +29,15 @@
           </svg>
           <h2 class="logo-text">Chatbot</h2>
         </div>
-        <button id="close-chatbot" class="material-symbols-rounded">keyboard_arrow_down</button>
+        <button id="close-chatbot" class="material-symbols-rounded">
+          keyboard_arrow_down
+        </button>
       </div>
       <!--* chatbot body  -->
       <div class="chat-body">
         <div class="message bot-message">
           <svg
-          class="bot-avatar"
+            class="bot-avatar"
             xmlns="http://www.w3.org/2000/svg"
             width="50"
             height="50"
@@ -46,17 +48,20 @@
             ></path>
           </svg>
           <div class="message-text">
-            Hey there <br />
-            How can i help you today?
+            Merhaba<br />
+            Sana nasıl yardımcı olabilirim?
           </div>
         </div>
-        
       </div>
 
       <!--* chatbot footer  -->
       <div class="chat-footer">
         <form action="#" class="chat-form">
-          <textarea placeholder="Message..." class="message-input" required></textarea>
+          <textarea
+            placeholder="Mesajın..."
+            class="message-input"
+            required
+          ></textarea>
           <div class="chat-controls">
             <button type="button" class="material-symbols-outlined">
               <svg
@@ -71,20 +76,27 @@
                 />
               </svg>
             </button>
-            <button type="button" class="material-symbols-rounded">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#706db0"
-              >
-                <path
-                  d="M720-330q0 104-73 177T470-80q-104 0-177-73t-73-177v-370q0-75 52.5-127.5T400-880q75 0 127.5 52.5T580-700v350q0 46-32 78t-78 32q-46 0-78-32t-32-78v-370h80v370q0 13 8.5 21.5T470-320q13 0 21.5-8.5T500-350v-350q-1-42-29.5-71T400-800q-42 0-71 29t-29 71v370q-1 71 49 120.5T470-160q70 0 119-49.5T640-330v-390h80v390Z"
-                />
-              </svg>
-            </button>
-            <button type="submit" id="send-message" class="material-symbols-rounded">
+            <div class="file-upload-wrapper">
+              <input type="file" accept="images/" id="file-input" hidden>
+              <button type="button" id="file-upload" class="material-symbols-rounded">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#706db0"
+                >
+                  <path
+                    d="M720-330q0 104-73 177T470-80q-104 0-177-73t-73-177v-370q0-75 52.5-127.5T400-880q75 0 127.5 52.5T580-700v350q0 46-32 78t-78 32q-46 0-78-32t-32-78v-370h80v370q0 13 8.5 21.5T470-320q13 0 21.5-8.5T500-350v-350q-1-42-29.5-71T400-800q-42 0-71 29t-29 71v370q-1 71 49 120.5T470-160q70 0 119-49.5T640-330v-390h80v390Z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <button
+              type="submit"
+              id="send-message"
+              class="material-symbols-rounded"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="24px"

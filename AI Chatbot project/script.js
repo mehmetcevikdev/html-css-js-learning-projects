@@ -1,6 +1,10 @@
 const chatBody = document.querySelector(".chat-body");
 const messageInput = document.querySelector(".message-input");
 const sendMessageButton = document.querySelector("#send-message");
+const fileInput = document.querySelector("#file-input");
+
+const API_KEY = "";
+const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
 
 const userData = {
   message: null,
@@ -13,9 +17,38 @@ const createMessageElement = (content, ...classes) => {
   return div;
 };
 
-const generateBotResponse = ()=>{
-    
-}
+const generateBotResponse = async (incomingMessageDiv) => {
+  const messageElement = incomingMessageDiv.querySelector(".message-text");
+
+  const requestOptions = {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      contents: [
+        {
+          parts: [{ text: userData.message }],
+        },
+      ],
+    }),
+  };
+  try {
+    const response = await fetch(API_URL, requestOptions);
+    const data = await response.json();
+    if (!response.ok) throw new Error(data.error.message);
+
+    const apiResponseText = data.candidates[0].content.parts[0].text
+      .replace(/\*\*(.*?)\*\*/g, "$1")
+      .trim();
+    messageElement.innerHTML = apiResponseText;
+  } catch (error) {
+    console.log(error);
+    messageElement.innerHTML = error.message;
+    messageElement.style.color = "#ff0000";
+  } finally {
+    incomingMessageDiv.classList.remove("thinking");
+    chatBody.scrollTo({ top: chatBody.scrollHeight, behavior: "smooth" });
+  }
+};
 
 const handleOutgoingMessage = (e) => {
   e.preventDefault();
@@ -31,6 +64,7 @@ const handleOutgoingMessage = (e) => {
   outgoingMessageDiv.querySelector(".message-text").textContent =
     userData.message;
   chatBody.appendChild(outgoingMessageDiv);
+  chatBody.scrollTo({ top: chatBody.scrollHeight, behavior: "smooth" });
 
   setTimeout(() => {
     const messageContent = `<svg
@@ -54,10 +88,12 @@ const handleOutgoingMessage = (e) => {
 
     const incomingMessageDiv = createMessageElement(
       messageContent,
-      "bot-message",'thinking'
+      "bot-message",
+      "thinking"
     );
     chatBody.appendChild(incomingMessageDiv);
-    generateBotResponse()
+    chatBody.scrollTo({ top: chatBody.scrollHeight, behavior: "smooth" });
+    generateBotResponse(incomingMessageDiv);
   }, 600);
 };
 
@@ -67,3 +103,15 @@ messageInput.addEventListener("keydown", (e) => {
     handleOutgoingMessage(e);
   }
 });
+
+fileInput.addEventListener("change", () => {
+  const file = fileInput.files[0];
+  if (!file) return;
+  
+  
+});
+
+sendMessageButton.addEventListener("click", (e) => handleOutgoingMessage(e));
+document
+  .querySelector("#file-upload")
+  .addEventListener("click", () => fileInput.click());

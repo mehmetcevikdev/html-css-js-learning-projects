@@ -81,6 +81,9 @@ body {
   margin-bottom: 82px;
   overflow-y: auto;
   flex-direction: column;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #ccccf5 transparent;
 }
 
 .chat-body .message {
