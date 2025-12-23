@@ -4,6 +4,8 @@ const sendMessageButton = document.querySelector("#send-message");
 const fileInput = document.querySelector("#file-input");
 const fileUploadWrapper = document.querySelector(".file-upload-wrapper");
 const fileCancelButton = document.querySelector("#file-cancel");
+const chatbotToggler = document.getElementById("chatbot-toggler");
+const closeChatbot = document.getElementById("close-chatbot");
 
 const API_KEY = "";
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
@@ -16,6 +18,9 @@ const userData = {
   },
 };
 
+const chatHistory = [];
+const initialInputHeight = messageInput.scrollHeight;
+
 const createMessageElement = (content, ...classes) => {
   const div = document.createElement("div");
   div.classList.add("message", ...classes);
@@ -25,19 +30,19 @@ const createMessageElement = (content, ...classes) => {
 
 const generateBotResponse = async (incomingMessageDiv) => {
   const messageElement = incomingMessageDiv.querySelector(".message-text");
+  chatHistory.push({
+    role: "user",
+    parts: [
+      { text: userData.message },
+      ...(userData.file.data ? [{ inline_data: userData.file }] : []),
+    ],
+  });
 
   const requestOptions = {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      contents: [
-        {
-          parts: [
-            { text: userData.message },
-            ...(userData.file.data ? [{ inline_data: userData.file }] : []),
-          ],
-        },
-      ],
+      contents: chatHistory,
     }),
   };
   try {
@@ -49,6 +54,11 @@ const generateBotResponse = async (incomingMessageDiv) => {
       .replace(/\*\*(.*?)\*\*/g, "$1")
       .trim();
     messageElement.innerHTML = apiResponseText;
+
+    chatHistory.push({
+      role: "model",
+      parts: [{ text: apiResponseText }],
+    });
   } catch (error) {
     console.log(error);
     messageElement.innerHTML = error.message;
@@ -64,7 +74,8 @@ const handleOutgoingMessage = (e) => {
   e.preventDefault();
   userData.message = messageInput.value.trim();
   messageInput.value = "";
-  fileUploadWrapper.classList.remove('file-uploaded')
+  fileUploadWrapper.classList.remove("file-uploaded");
+  messageInput.dispatchEvent(new Event("input"));
 
   const messageContent = `<div class="message-text"></div>
                           ${
@@ -115,9 +126,20 @@ const handleOutgoingMessage = (e) => {
 
 messageInput.addEventListener("keydown", (e) => {
   const userMessage = e.target.value.trim();
-  if (e.key === "Enter" && userMessage) {
+  if (
+    e.key === "Enter" &&
+    userMessage &&
+    !e.shiftkey 
+  ) {
     handleOutgoingMessage(e);
   }
+});
+
+messageInput.addEventListener("input", () => {
+  messageInput.style.height = `${initialInputHeight}px`;
+  messageInput.style.height = `${messageInput.scrollHeight}px`;
+  document.querySelector(".chat-form").style.borderRadius =
+    messageInput.scrollHeight > initialInputHeight ? "15px" : "32px";
 });
 
 // handle file input change
@@ -143,11 +165,40 @@ fileInput.addEventListener("change", () => {
 });
 
 fileCancelButton.addEventListener("click", () => {
-  userData.file={}
-  fileUploadWrapper.classList.remove('file-uploaded')
+  userData.file = {};
+  fileUploadWrapper.classList.remove("file-uploaded");
 });
+
+//initialize emjo picker and handle emjo selection
+const picker = new EmojiMart.Picker({
+  theme: "light",
+  skinTonePosition: "none",
+  previewPosition: "none",
+  onEmojiSelect: (emoji) => {
+    const { selectionStart: start, selectionEnd: end } = messageInput;
+    messageInput.setRangeText(emoji.native, start, end, "end");
+    messageInput.focus();
+  },
+  onClickOutside: (e) => {
+    if (e.target.id === "emoji-picker") {
+      document.body.classList.toggle("show-emoji-picker");
+    } else {
+      document.body.classList.remove("show-emoji-picker");
+    }
+  },
+});
+
+document.querySelector(".chat-form").appendChild(picker);
 
 sendMessageButton.addEventListener("click", (e) => handleOutgoingMessage(e));
 document
   .querySelector("#file-upload")
   .addEventListener("click", () => fileInput.click());
+
+chatbotToggler.addEventListener("click", () => {
+  document.body.classList.toggle("show-chatbot");
+});
+
+closeChatbot.addEventListener("click", () => {
+  document.body.classList.remove("show-chatbot");
+});
